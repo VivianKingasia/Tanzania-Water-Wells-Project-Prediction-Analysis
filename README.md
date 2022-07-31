@@ -52,7 +52,7 @@ Evaluation – Several metrics were used to meet the objectives.
 We used log loss to ensure a high predictive ability, recall score
 as our objective was that our model to be output sensitive and auc curve.
 ## Data Understanding
-Our data for this analysis comes from TAARIFA (a technological data company) and the Tanzanian Ministry of Water and is in the CSV format. The data mainly came from Taarifa waterpoints dashboard. The tech company aggregates data from the Tanzania Ministry of Water and the combined dataset has 59400 rows and 42 columns.
+Our data for this analysis comes from TAARIFA (a technological data company) and the Tanzanian Ministry of Water and is in the CSV format. The data mainly came from Taarifa waterpoints dashboard. The tech company aggregates data from the Tanzania Ministry of Water and the combined dataset has 59400 rows and 40 columns.
 
 Four CSV files have been provided. One titled(Training set values) contains training set values with data on the independent features for the training set. The training set labels file (Training set labels) contains data on the dependent variable. The test set values (Test set values) contains values that will be used for prediction. A submission format (Submission format) has also been provided as this was a data science competition and the results of the analysis need to be in a specific format.
 
@@ -66,14 +66,14 @@ Non functional - the waterpoint is not operational
 
 This ternary analysis will be convered to a binary analysis by combining the functional need repairs category and the non functional category to represent poor condition and functional to represent waterpoints in good condition.
 
-There are 40 independent features in this dataset.
+There are 39 independent features in this dataset.
 ## Conclusion
 
 Tanzania faces a huge challenge of water crisis exercabeted by high failure rates of the waterpoints.
 The analysis was able to predict test data with an accuracy of 0.73, a precision of 0.7 and recall of 0.89. The accuracy of 73% tells us that our model will assign the correct label; functional as 1 or non functional as 0 73% of the time.Our recall of 89% means that our model is able to identify 89% of the true positives 73% of the time. The recall is the true positive rate.
 
 
-This analysis did not support literature that scheme management affects failure rates of waterpoints.
+This analysis did not support literature that scheme management is one of the most important features that affects failure rates of waterpoints. Scheme management is ranked 7th in the feature importance scale.
 However, it showed that type of waterpoint technology, type of extraction and amount paid for water affects the failure rates of these waterpoint types. The results therefore show that NGOs should focus on investing in communal standpipes, extraction types and analyzing water quantity in order to ensure reduction of failure rates of waterpoints. Most of these features highlight the 'other' type which means that more information needs to be collected to explore which other types of extraction_type and waterpoint type technologies that would help reduce failure rates.
 ## Recommendations
 
